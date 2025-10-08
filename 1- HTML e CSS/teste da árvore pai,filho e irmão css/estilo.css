@@ -1,0 +1,17 @@
+.card{
+    border: 2px solid black;
+    padding: 20px;
+}
+
+.card p {
+    font-size: 1.2em;
+    color: green;
+}
+
+.inline-div{
+    display: inline-block;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 5px;
+    font-size: 50px;
+}

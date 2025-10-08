@@ -1,0 +1,41 @@
+html{
+    background-color: rgba(162, 167, 121, 0.76);
+    height: 50px;
+}
+
+h1{
+    text-align: center;
+}
+
+.ingredientes{
+    background-color: rgba(47, 154, 196, 0.63);
+    border-style: outset;
+    margin-bottom: 15px;
+    padding: 20px;
+    text-align: justify;
+    border-radius: 70px;
+    width: 80vw;
+    color: white;
+}
+
+.modo-de-preparo{
+    background-color: rgba(47, 255, 127, 0.575);
+    border-style: outset;
+    margin-bottom: 20px;
+    padding: 20px;
+    text-align: justify;
+    border-radius: 70px;
+    width: 80vw;
+    color: white; 
+}
+
+#observação{
+    background-color: rgb(221, 219, 74);
+    font-style: italic;
+    padding: 15px;
+    margin-bottom: 20px;
+    text-align: justify;
+    border-color: rgba(219, 50, 50, 0.712);
+    border-style: dashed;
+}
+

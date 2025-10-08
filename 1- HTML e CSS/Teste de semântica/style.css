@@ -1,0 +1,86 @@
+* {
+    /* reset básico da página*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+header {
+    /*Cabeçalho da página*/
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+}
+
+.menu {
+    padding: 3px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.menu a {
+    /*Trocar a cor das palavras do menu*/
+    color: yellow;
+}
+
+nav {
+    /*Para deixar no canto direito o menu*/
+    display: flex;
+    float: right;
+    background-color: rgb(0, 0, 0);
+}
+
+header h1 {
+    /*Troca de cor da palavra cabeçalho*/
+    color: yellow;
+}
+
+article {
+    /*Código para deixar as divs no meio*/
+
+    flex-direction: column;
+    background-color: rgb(230, 230, 230);
+    max-width: 350px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgb(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    position: relative;
+    padding: 20px;
+    flex: 1 1 300px;
+}
+
+section{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+    gap: 10px;
+}
+
+article:hover {
+    transform: translateY(-5px);
+}
+
+footer {
+    /*rodape*/
+    background-color: rgb(0, 0, 0);
+    padding: 12px;
+}
+
+footer p {
+    /*Troca de cor a palavra*/
+    color: yellow;
+}

@@ -1,0 +1,47 @@
+#img1 {
+    float: left;
+    object-fit: cover;
+    object-position: center;
+    /* top, bottom, center, ou valores específicos como 50px 10% */
+}
+
+body {
+    background: linear-gradient(to right, #09090a 0%, #ecebeb 50%, #ecebeb 50%, #09090a 100%);
+}
+
+#img2 {
+    float: right;
+    object-fit: cover;
+    object-position: center;
+    /* top, bottom, center, ou valores específicos como 50px 10% */
+}
+
+.escudo2{
+    padding: 100px;
+    display: inline;
+    height: 20px;
+}
+
+.escudo1 {
+    padding: 100px;
+    display: inline;
+    height:  20px;
+}
+
+h2 {
+    color: white;
+    font-size: 30px;
+}
+
+p {
+    color: yellow;
+    font-size: 25px;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+li {
+    color: yellow;
+}

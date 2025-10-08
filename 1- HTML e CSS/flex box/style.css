@@ -1,0 +1,21 @@
+.flex-container{
+    display: flex;
+    flex-direction: row; /*Para a linha*/
+    justify-content: space-around; /*Para distribuir o espaço*/
+}
+
+div{
+    border: 1px solid black;
+    padding: 10px;
+    margin: 5px;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 200px 1fr;/*Coluna 1 com 200px, Coluna 2 ocupa o resto*/
+    grid-template-rows: auto 1fr auto;
+}
+
+.header{
+    grid-column: 1/3;/*Ocupa as 2 colunas*/
+}
