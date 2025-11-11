@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flexbox;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+}
+header{
+    padding: 15px;
+    border: 2px dotted pink;
+    justify-content: center;
+    align-items: center;
+    display: flex; ;
+    margin: 0  ;
+    background-image:linear-gradient(to top, #eec8c3, white);
+    justify-content: space-evenly;
+}
+#imagem_titulo{
+    display: flex;
+    width: 40%;
+    position:inherit;     
+    margin: 0.4%;
+    padding: 15px;
+    border-radius: 30px;
+    border: 1px none solid;    
+    width: 150px;
+}
+#imagem_logo{
+    display: flex;
+    width: 40%;
+    position:inherit;     
+    margin: 0.4%;
+    padding: 15px;
+    border-radius: 30px;
+    border: 1px none solid;
+}
+#conjunto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+nav{
+   width: 325px;
+   margin: 0px;
+   border: 2px black solid;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+.navegacao{
+    color: #C19D94;
+    font-size: 20px;
+}
+#barra_nav{
+    display: flex;
+    justify-content: center;
+}
+#produtos{
+    display: flexbox;
+    margin: 0%;
+    border: 2px red solid;
+    width: 80%;
+    justify-self: flex-end;
+
+}
+div{
+    display: grid;
+    padding: 15px;
+    border: 2px black dashed;
+    margin: 1%;
+    
+}
+h3{
+    display: flex;
+    padding: 3px;
+    border: 2px black solid;
+    margin: 0%;
+}
+
+aside{
+    display: flex;
+    flex-direction: row;
+    padding: 2px;
+    border: 2px black solid;
+    float: left;
+    width: 15%;
+    height: 600px;
+}
+
+footer{
+    margin: 0%;
+    border: 2px red solid;
+    width: auto;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
