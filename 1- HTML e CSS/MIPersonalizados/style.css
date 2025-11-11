@@ -1,64 +1,72 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
-body{
+
+body {
     display: flexbox;
     flex-direction: column;
     flex-wrap: wrap;
-    
+
 }
-header{
+
+header {
     padding: 15px;
-    border: 2px dotted pink;
     justify-content: center;
     align-items: center;
-    display: flex; ;
-    margin: 0  ;
-    background-image:linear-gradient(to top, #eec8c3, white);
+    display: flex;
+    margin: 0;
+    background-image: linear-gradient(to top, #eec8c3, #eec8c38a);
     justify-content: space-evenly;
 }
-#imagem_titulo{
+
+#imagem_titulo {
     display: flex;
     width: 40%;
-    position:inherit;     
+    position: inherit;
     margin: 0.4%;
     padding: 15px;
     border-radius: 30px;
-    border: 1px none solid;    
+    border: 1px none solid;
     width: 150px;
 }
-#imagem_logo{
+
+#imagem_logo {
     display: flex;
     width: 40%;
-    position:inherit;     
+    position: inherit;
     margin: 0.4%;
     padding: 15px;
     border-radius: 30px;
     border: 1px none solid;
 }
-#conjunto{
+
+#conjunto {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-nav{
-   width: 325px;
-   margin: 0px;
-   border: 2px black solid;
+
+nav {
+    width: 325px;
+    margin: 0px;
     display: flex;
     flex-wrap: wrap;
     gap: 5px;
 }
-.navegacao{
+
+.navegacao {
     color: #C19D94;
-    font-size: 20px;
+    font-size: 25px;
 }
-#barra_nav{
+
+#barra_nav {
     display: flex;
     justify-content: center;
+    font-size: 30;
 }
-#produtos{
+
+#produtos {
     display: flexbox;
     margin: 0%;
     border: 2px red solid;
@@ -66,36 +74,31 @@ nav{
     justify-self: flex-end;
 
 }
-div{
+main{
+    padding: 15px;
+    margin: 0;
+    background-color: #eec8c3;
+}
+
+div {
     display: grid;
     padding: 15px;
-    border: 2px black dashed;
     margin: 1%;
-    
+
 }
-h3{
+
+h3 {
     display: flex;
     padding: 3px;
-    border: 2px black solid;
     margin: 0%;
 }
 
-aside{
+footer {
+    padding: 15px;
     display: flex;
-    flex-direction: row;
-    padding: 2px;
-    border: 2px black solid;
-    float: left;
-    width: 15%;
-    height: 600px;
-}
-
-footer{
-    margin: 0%;
-    border: 2px red solid;
-    width: auto;
-    padding: 50px;
-    display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-image: linear-gradient(to bottom, #eec8c3, white);
+    justify-content: space-evenly;
 }
