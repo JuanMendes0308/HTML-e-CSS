@@ -9,14 +9,15 @@
 </head>
 
 <body>
-    
-    <header><div id="conjunto">
-        <img src="img/LogoMIpersonalizados-removebg-preview.png" alt="" id="imagem_titulo">
-        <img src="img/logotitulo.png" id="imagem_logo" >
-    </div>
+
+    <header>
+        <div id="conjunto">
+            <img src="img/LogoMIpersonalizados-removebg-preview.png" alt="" id="imagem_titulo">
+            <img src="img/logotitulo.png" id="imagem_logo">
+        </div>
         <div class="nav-wrapper">
             <button class="arrow left">←</button>
- 
+
             <nav class="nav-carousel" id="carousel">
                 <button>Home</button>
                 <button>Catálogo</button>
@@ -25,27 +26,27 @@
                 <button>Contato</button>
                 <button>Login</button>
             </nav>
- 
+
             <button class="arrow right">→</button>
         </div>
- 
+
         <script>
             const carousel = document.getElementById("carousel");
- 
+
             document.querySelector(".arrow.left").addEventListener("click", () => {
                 carousel.scrollBy({
                     left: -200,
                     behavior: "smooth"
                 });
             });
- 
+
             document.querySelector(".arrow.right").addEventListener("click", () => {
                 carousel.scrollBy({
                     left: 200,
                     behavior: "smooth"
                 });
             });
- 
+
         </script>
     </header>
 
@@ -55,16 +56,31 @@
         <div id="sobre">
 
             <article>
-                <p>A Mi Personalizados tem como objetivo principal ser a referência de mercado em presentes e lembranças que convergem exclusividade, qualidade superior e valor afetivo. A empresa se estabelece como o parceiro de confiança para clientes que valorizam produtos únicos e fora do padrão, como as mães festeiras, dedicando-se a garantir a mais alta qualidade e entregando itens que superam expectativas, feitos com carinho e atenção rigorosa aos detalhes. Nosso compromisso é transformar cada evento em uma lembrança eterna, consolidando a marca como sinônimo de afeto e momentos inesquecíveis. Na Mi Personalizados, transformamos ideias em celebrações memoráveis, atuando como um ateliê especializado na criação de produtos exclusivos e emocionantes que narram a história de cada cliente de forma singular. Nosso portfólio de serviços concentra-se em Lembrancinhas Personalizadas, que são a alma da festa; Encadernação, com álbuns e planners feitos artesanalmente; Sublimação e Transfer, para peças únicas de presente ou decoração; e Kits Mini Festa, que oferecem praticidade com um toque exclusivo da nossa marca.</p>
-                    
-                </article>
-                <img src="img/Mídia copiar.png" alt="" id="imagem_tia">
-            </div>
-    
+                <p>A Mi Personalizados tem como objetivo principal ser a referência de mercado em presentes e lembranças
+                    que convergem exclusividade, qualidade superior e valor afetivo. A empresa se estabelece como o
+                    parceiro de confiança para clientes que valorizam produtos únicos e fora do padrão, como as mães
+                    festeiras, dedicando-se a garantir a mais alta qualidade e entregando itens que superam
+                    expectativas, feitos com carinho e atenção rigorosa aos detalhes. Nosso compromisso é transformar
+                    cada evento em uma lembrança eterna, consolidando a marca como sinônimo de afeto e momentos
+                    inesquecíveis. Na Mi Personalizados, transformamos ideias em celebrações memoráveis, atuando como um
+                    ateliê especializado na criação de produtos exclusivos e emocionantes que narram a história de cada
+                    cliente de forma singular. Nosso portfólio de serviços concentra-se em Lembrancinhas Personalizadas,
+                    que são a alma da festa; Encadernação, com álbuns e planners feitos artesanalmente; Sublimação e
+                    Transfer, para peças únicas de presente ou decoração; e Kits Mini Festa, que oferecem praticidade
+                    com um toque exclusivo da nossa marca.</p>
+
+            </article>
+            <img src="img/Mídia copiar.png" alt="Uma mulher chamada Michele" id="imagem_tia">
+            
+        </div>
+        <div id="sobre_mim">
+            <figcaption><p><font size="6px">Michele Costa</font></p>
+            <p>Fundadora</p></figcaption>
+        </div>
     </main>
-    
+
     <footer>
-        &copy 
+        &copy
     </footer>
 </body>
 
