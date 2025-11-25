@@ -4,7 +4,7 @@
 }
 
 body {
-    display: flexbox;
+    display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     background-color: #b882b8;
@@ -69,51 +69,73 @@ nav {
 article{
     background-color: #EFB3EE;
     display: flex;
+    width: 40%;
     border-radius: 30px;
     padding: 2%;
-    width: 650px;
-    height: 370px;
     align-items: start;
+    margin: 0 0 0 0;
+    flex-wrap: wrap;
 }
-
+main #sobre_mim{
+    justify-self: end;
+}
 main{
-    padding: 15px;
-    margin: 0;
-    background-color:  #be7d7d;
-}
-
-#sobre{
     display: flex;
-    gap: 670px;
+}
+#sobre{
+    margin: 0;
+    display: flex;
+    margin-bottom: 0;
+    width: 900px;
 }
 #sobre article{
     display: flex;
+    flex-wrap: wrap;
     justify-self: start;
-    font-size: 115%;
+    font-size: 145%;
+    width: auto;
+    height:max-content;
 }
+
 #imagem_tia{
-    width: 550px;
-    height: 400px;
+    width: 500px;
+    height: 500px;
     border-radius: 50%;
+    margin-top: 0 0 0 0;
+    border: 2px solid black; 
+    margin-right: 70px;
     display: flex;
-    align-items: center;
+    justify-self: end;
+    
+}
+
+div#sobre_mim{
+    align-content: end;
+    margin-top: 0;
     justify-content: center;
-    margin-top: -15px;
 }
 #sobre_mim{
-    display: flex;
+    display: grid;
     justify-content: center;
     align-items: center;
+    padding: 20px;
+    margin: 0 0 0 0;
     width: 30%;
-    justify-self: end;
-    margin-top: -105px;
-    font-size: px;
+    
+}
+#sobre_mim p{
+    padding: 10px;
+    border: #e0e0e06b 5px inset;
+    border-radius: 20px;
+    background-color: #3a003a;
+    color: white;
 }
 div {
-    display: grid;
+    display: flex;
     padding: 15px;
     margin: 1%;
-border: 2px black solid;
+    flex-wrap: wrap;
+    border: 2px black solid;
 }
 
 h3 {
@@ -129,7 +151,6 @@ footer {
     align-items: center;
     margin: 0;
     background-color:  #eec8c3;
-    justify-content: space-evenly;
 }
 
 .nav-wrapper {
@@ -181,4 +202,15 @@ footer {
 h2{
 color: white;
 
+}
+
+@media (max-width: 760px){
+    main{
+        flex-direction: column;
+    }
+
+    #sobre_mim, #sobre, #imagem_tia{
+        flex-direction: none;
+    }
+    
 }
