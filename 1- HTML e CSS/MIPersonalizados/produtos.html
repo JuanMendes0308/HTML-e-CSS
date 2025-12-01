@@ -5,142 +5,173 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Produtos</title>
 </head>
 
 <body>
     
-    <header><div id="conjunto">
+    <header>
+        <div id="conjunto">
         <img src="img/LogoMIpersonalizados-removebg-preview.png" alt="" id="imagem_titulo">
         <img src="img/logotitulo.png" id="imagem_logo" >
     </div>
         <nav>
-            <a href="#" class="navegacao">Home</a> |
-            <a href="#" class="navegacao">Produtos</a> |
-            <a href="#" class="navegacao">Contato</a>
-            <input type="text" id="barra_nav">  
-        </nav>
+                <a href="index.html">Home</a>
+                <a href="produtos.html">Produtos</a>
+                <a href="festa.html">Produtos de Festa</a>
+                <a href="presente.html">Produtos de Presente</a>
+                <a href="login.html">Login</a>
+            </nav>
     </header>
 
-    <main>
-        <h2>Nosso Objetivo</h2>
-        <article>
-            <p>O nosso objetivo é não sei o que não sei o que mais, bla bla bla!</p>
-        </article>
-        <section>
-            <article>
+    <main class="corpodoproduto"> 
 
-            </article>
-        </section>
-        <aside>
-            Aside
-        </aside>
-    </main>
-    <div id="produtos">
-        <h3>Acrílicos</h3>
-        <div>
-            <div>
-            </div>
-        </div>
-        <h3>Bandeirola</h3>
-        <div>
-            <div>
-            </div>
-        </div>
-        <h3>Calendário</h3>
-        <div>
-            <div>
-            </div>
-        </div>
-        <h3>Canecas</h3>
-        <div>
-            <div>
-            </div>
-        </div>
-        <h3>Chinelos</h3>
-        <div>
-            <div>
-            </div>
-        </div>
-        <h3>Copos</h3>
-        <div>
-            <div>
-            </div>
-        </div>
-        <h3>Garrafas</h3>
-        <div>
-            <div>
-            </div>
-        </div>
-        <h3>Jogos</h3>
-        <div>
-            <div>
-            </div>
-        </div>
-        <h3>Kit Maternidade</h3>
-        <div>
-            <div>
-            </div>
-        </div>
-        <h3>Kit Toalhete</h3>
-        <div>
-            <div>
-            </div>
-        </div>
-        <h3>Lembrancinhas</h3>
-        <div>
-            <div>
-            </div>
-        </div>
-        <h3>Livros de Colorir</h3>
-        <div>
-            <div>
-            </div>
-        </div>
-        <h3>Material Escolar</h3>
-            <div>
-                <div>
+    
+        <article class="itens">
+
+            <figure class="bloco">
+
+                <div class="fundo">
+
+                    <img src="img/produtos em branco/taca.png" alt="Taça decorativa" class="produtos" id="taca">
+
+                    <p class="descricao">
+                         Taça de drinks
+                    </p>
+
+                    <button class="butao" onclick="clicar()" id="botao"> Mais informações</button>
+
                 </div>
-            </div>
-        <h3>Quebra Cabeça</h3>
-        <div>
-            <div>
-            </div>
+            
+
+                    <div class="fundo">
+
+                    <img src="img/produtos em branco/caneca.png" alt="canecas" class="produtos" id="caneca">
+                
+                    <p class="descricao">
+                        Canecas personalizadas 
+                    </p>
+
+                    <button  class="butao" onclick="clicar()" id="botao"> Mais informações</button>
+                </div>
+
+                <div class="fundo">
+
+                    <img src="img/produtos em branco/portajoia.png" alt="Porta joia" class="produtos" id="portajoia">
+
+                    <p class="descricao"> Porta joias </p>
+
+                    <button class="butao" onclick="clicar()" id="botao">Mais informações</button>
+                </div>
+
+
+                <div class="fundo">
+
+                    <img src="img/produtos em branco/garrafa.png" alt="garrafa" class="produtos" id="garrafa">
+
+                    <p class="descricao"> Garrafa de metal</p>
+
+                    <button class="butao" onclick="clicar()" id="botao">Mais informações</button>
+                </div>
+
+                <div class="fundo">
+                    <img src="img/produtos em branco/saco_de_roupa.png" alt="Saco de roupa" id="saco_de_roupa" class="produtos">
+
+                    <p class="descricao">
+                        Saco de roupa suja
+                    </p>
+
+                    <button class="butao" onclick="clicar()" id="botao">Mais informações</button>
+                </div>
+
+                <div class="fundo">
+
+                    <img src="img/produtos em branco/toalha_de_rosto.png" alt="Toalha de Rosto" class="produtos" id="toalha">
+
+                    <p class="descricao"> Toalha de rosto</p>
+
+                    <button class="butao" onclick="clicar()" id="botao">Mais informações</button>
+                </div>
+
+                <div class="fundo">
+
+                    <img src="img/produtos em branco/placa_de_porta.png" alt="Placa de porta" class="produtos" id="placa">
+
+                    <p class="descricao">Placa de porta</p>
+
+                    <button class="butao" onclick="clicar()" id="botao">Mais informações</button>
+                </div>
+                 
+                <div class="fundo">
+
+                    <img src="img/produtos em branco/chaveiro.png" alt="Chaveiro" class="produtos" id="chaveiro">
+
+                    <p class="descricao">Chaveiro</p>
+
+                    <button class="butao" onclick="clicar()" id="botao">Mais informações</button>
+                </div>
+
+
+                <div class="fundo">
+
+                    <img src="img/produtos em branco/caderno.png" alt="Caderno"
+                    class="produtos" id="cardeno">
+
+                    <p class="descricao">Caderno</p>
+
+                    <button class="butao" onclick="clicar()" id="botao">Mais informações</button>
+                </div>
+
+
+                <div class="fundo">
+
+                    <img src="img/produtos em branco/quebra cabeça.png" alt="Quebra cabeça" class="produtos" id="quebracabeca">
+
+                    <p class="descricao">Quebra cabeça</p>
+
+                    <button class="butao" onclick="clicar()" id="botao">Mais informações</button>
+                </div>
+
+                <div class="fundo">
+
+                    <img src="img/produtos em branco/pintar.png" alt="Bobbie goods" class="produtos" id="Bobbie">
+
+                    <p class="descricao">Bobbie goods</p>
+
+                    <button class="butao" onclick="clicar()" id="botao">Mais informações</button>
+                </div>
+
+                <div class="fundo">
+                    
+                    <img src="img/produtos em branco/livro de pintar.png" alt="Livro de pintar" class="produtos" id="livrodepintar">
+
+                    <p class="descricao">Livro de Pintar</p>
+
+                    <button class="butao" onclick="clicar()" id="botao" >Mais informações</button>
+                </div>
+            </figure>
+
+                <div class="contato">
+            <button class="zap">
+
+                <a href="https://l.instagram.com/?u=https%3A%2F%2Fwa.me%2Fmessage%2FZDNNFKYWAXFCJ1%3Futm_source%3Dig%26utm_medium%3Dsocial%26utm_content%3Dlink_in_bio%26fbclid%3DPAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnpBQQhRvBfS5dmYf4L9aU28diGfKwy37JeBQqN7qLmbdoBNtZyC5sNrmETIo_aem_1sA4E82PwYlPreX5XSTODQ&e=AT1ZhfRaw7RK-f-PdwQkV-0tJpPaCT7F_LdJr9s0gUH-wi-ltLY4D1FxZ5QJSlvt39t0PS4lQb98HTb1g5c5J6pYyVWYhkF_Chjy1PlZKQ" target="_blank">
+
+                        <img src="img/zap.jpg" alt="simbolo do Whatzapp" height="50px">
+
+                </a>
+            </button>
+            
         </div>
-        <h3>Roupas</h3>
-        <div>
-            <div>
-            </div>
-        </div>
-        <h3>Sacolinhas</h3>
-        <div>
-            <div>
-            </div>
-        </div>
-        <h3>Sacos</h3>
-        <div>
-            <div>
-            </div>
-        </div>
-        <h3>Toalhas</h3>
-        <div>
-            <div>
-            </div>
-        </div>
-        <h3>Topo de Bolo</h3>
-        <div>
-            <div>
-            </div>
-        </div>
-        <h3>Topo no Quadro</h3>
-        <div>
-            <div>
-            </div>
-        </div>
-    </div>
-    <footer>
-        &copy 
-    </footer>
+        
+        
+        </article>
+        
+    </main>
+
+
+
+        <script src="interacao.js"></script>
 </body>
 
 </html>
+

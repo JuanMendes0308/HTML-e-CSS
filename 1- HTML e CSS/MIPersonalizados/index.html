@@ -15,40 +15,18 @@
             <img src="img/LogoMIpersonalizados-removebg-preview.png" alt="" id="imagem_titulo">
             <img src="img/logotitulo.png" id="imagem_logo">
         </div>
-        <div class="nav-wrapper">
-            <button class="arrow left">←</button>
 
-            <nav class="nav-carousel" id="carousel">
-                <button>Home</button>
-                <button>Catálogo</button>
-                <button>Personalizar</button>
-                <button>Sobre</button>
-                <button>Contato</button>
-                <button>Login</button>
-            </nav>
-
-            <button class="arrow right">→</button>
-        </div>
-
-        <script>
-            const carousel = document.getElementById("carousel");
-
-            document.querySelector(".arrow.left").addEventListener("click", () => {
-                carousel.scrollBy({
-                    left: -200,
-                    behavior: "smooth"
-                });
-            });
-
-            document.querySelector(".arrow.right").addEventListener("click", () => {
-                carousel.scrollBy({
-                    left: 200,
-                    behavior: "smooth"
-                });
-            });
-
-        </script>
+        <nav>
+                <a href="index.html">Home</a>|
+                <a href="produtos.html">Produtos</a>|
+                <a href="festa.html">Produtos de Festa</a>|
+                <a href="presente.html">Produtos de Presente</a>|
+                <a href="login.html">Login</a>
+        </nav>
+    
     </header>
+
+            
 
     <main>
 
@@ -85,11 +63,38 @@
                 carinho e propósito. Em 2024, passei a me dedicar 100% à marca para oferecer peças únicas, feitas
                 com cuidado em cada detalhe.</p>
         </div>
-    </main>
 
-    <footer>
-        MiPersonalizados &copy Direitos Reservados
-    </footer>
+
+    </main>
+    <div class="carousel">
+
+        <button class="carousel-btn prev">❮</button>
+        <button class="carousel-btn next">❯</button>
+
+        <div class="carousel-track">
+            <div class="cartao-produto">
+                <div class="imagem"><img src="img/agenda1.jpg" alt="Sonic correndo" height="250"></div>
+               
+            </div>
+
+            <div class="cartao-produto">
+                <div class="imagem"><img src="img/agenda2.jpg" alt="Sonic correndo" height="250"></div>
+
+            </div>
+
+            <div class="cartao-produto">
+                <div class="imagem"><img src="img/chaveiro2.jpg" alt="Sonic correndo" height="250"></div>
+
+                </div>
+            </div>      
+        </div>
+
+
+        <footer>
+                MiPersonalizados &copy Direitos Reservado
+        </footer>
+
+        <script src="script.js"></script>
 </body>
 
-</html>
+    </html>
