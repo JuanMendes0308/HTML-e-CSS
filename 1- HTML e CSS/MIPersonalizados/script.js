@@ -1,22 +1,29 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const track = document.querySelector(".carousel-track");
-  const slides = Array.from(track.children);
-  const btnNext = document.querySelector(".next");
-  const btnPrev = document.querySelector(".prev");
+const track = document.querySelector('.carousel-track');
+const btnPrev = document.querySelector('.prev');
+const btnNext = document.querySelector('.next');
 
-  let index = 0;
+let index = 0;
 
-  function moveToSlide(i) {
-    track.style.transform = `translateX(-${i * 100}%)`;
-  }
+function getCardWidth() {
+    const card = track.querySelector('.cartao-produto');
+    return card.offsetWidth + 20; // largura + gap
+}
 
-  btnNext.addEventListener("click", () => {
-    index = (index + 1) % slides.length;
-    moveToSlide(index);
-  });
+btnNext.addEventListener('click', () => {
+    const cardWidth = getCardWidth();
+    const maxIndex = track.children.length - Math.floor(track.parentElement.offsetWidth / cardWidth);
 
-  btnPrev.addEventListener("click", () => {
-    index = (index - 1 + slides.length) % slides.length;
-    moveToSlide(index);
-  });
+    if (index < maxIndex) {
+        index++;
+        track.style.transform = `translateX(-${index * cardWidth}px)`;
+    }
+});
+
+btnPrev.addEventListener('click', () => {
+    const cardWidth = getCardWidth();
+
+    if (index > 0) {
+        index--;
+        track.style.transform = `translateX(-${index * cardWidth}px)`;
+    }
 });

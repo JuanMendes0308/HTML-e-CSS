@@ -12,25 +12,41 @@ body{
     background-image:linear-gradient(to bottom, #c07bbf, #EFB3EE);
 
 }
-header{
+header {
     padding: 2px;
     background-color: #EFB3EE;
     margin: 0;
     border-bottom: #6d366baa inset 5px;
-    border-radius: 40px;
     background-image:linear-gradient(to bottom, #c07bbf, #EFB3EE);
-    box-shadow: 5px 5px 5px rgba(251, 0, 251, 0.486);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* NAV */
+
+nav {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    float: right;
+    gap: 20px;
+}
+
+nav a{
+    text-decoration: none;
+    color:aliceblue;
+    font-style: italic;
 }
 #imagem_titulo{
-    display: flex;
-    position:inherit;     
+    position:inherit;    
     border: 1px none solid;
-    width: 300px;    
+    width: 250px;    
+    height: 70px;
     margin: 0;
 }
 #imagem_logo{
-    display: flex;
-    position:inherit;     
+    position:inherit;    
     border: 1px none solid;
     width: 100px;
     height: 100px;
@@ -40,6 +56,7 @@ header{
     align-items: center;
     justify-content: center;
     height: 200px;
+    width: 70%;
 }
 main{
     margin: 0 0 0 0;
