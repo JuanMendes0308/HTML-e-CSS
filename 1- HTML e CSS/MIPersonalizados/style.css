@@ -8,6 +8,10 @@ body{
     flex-direction: column;
     flex-wrap: wrap;
     background-image: url(ain.png);
+    background-size: cover;       /* faz a imagem ocupar toda a tela */
+    background-position: center;  /* centraliza a imagem */
+    background-repeat: no-repeat; /* impede repetição */
+    background-attachment: fixed;
 }
 
 html{
@@ -18,10 +22,8 @@ html{
 
 header {
     padding: 2px;
-    background-color: #EFB3EE;
+    background-color: #eeb3ed;
     margin: 0;
-    border-bottom: hsla(315, 74%, 79%, 0.973) inset 5px;
-    background-image:linear-gradient(to bottom, #f08dda, #ffb7fe);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -37,7 +39,7 @@ header {
 #imagem_logo{
     position:inherit;    
     border: 1px none solid;
-    width: 300px;
+    width: 400px;
     height: 100px;
 }
 #conjunto{
@@ -76,7 +78,7 @@ main{
 }
 
 article{
-    background-color: #EFB3EE;
+    background-color: #f7dae0;
     display: flex;
     width: 40%;
     border-radius: 30px;
@@ -122,7 +124,7 @@ article{
     padding: 10px;
     border: #e0e0e06b 5px inset;
     border-radius: 20px;
-    background-color: #3a003a;
+    background-color: #3a0000;
     color: white;
 }
 
@@ -131,12 +133,10 @@ article{
 .cartao-produto{
     display: flex;
     flex-direction: column;
-    max-width: 350px;
-    border: 1px solid #ddd;
+    max-width: 90%;
+    max-height: auto;
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 4px 8px rgb(0, 0, 0, 0.1);
-    background-color: white;
     transition: transform 0.3s ease;
 }
 
@@ -164,7 +164,7 @@ article{
     font-weight: bold;
 }
 
-.botao{
+.button{
     display: flex;
     justify-content: center;
     padding: 10px 15px;
@@ -176,8 +176,9 @@ article{
 /* ================= CARROSSEL ================= */
 
 .carousel {
-    width: 100%;
+    width: 90%;
     max-width: 900px;
+    max-height: 900px;
     overflow: hidden;
     position: relative;
     margin: auto;
@@ -186,20 +187,23 @@ article{
 
 .carousel-track {
     display: flex;
-    gap: 20px; /* espaço entre os cards */
+    gap: 40px; /* espaço entre os cards */
     transition: transform .4s ease;
+    width: 100%;
 }
 
 .cartao-produto {
     flex: 0 0 auto; /* largura fixa para aparecer lado a lado */
-    height: 260px;
-    background: #fff;
+    height: 500px;
     border-radius: 14px;
-    padding: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 90%;
+}
+
+img{
+    max-height: 70%;
 }
 
 .cartao-produto img {
@@ -207,6 +211,25 @@ article{
     height: 100%;
     border-radius: 10px;
     object-fit: cover;
+}
+
+.overlay{
+    position: absolute;
+    bottom: 33px;
+    left: 0;
+    width: 100%;
+    padding: 10px 0px;
+    color: white;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    background-color: rgba(0, 0, 0, 0.411);
+    border-radius: 8px;
+}
+.cartao-produto :hover .overlay{
+    opacity: 1;
 }
 
 /* BOTÕES */
@@ -225,8 +248,8 @@ article{
     box-shadow: 0 3px 8px rgba(0,0,0,0.2);
 }
 
-.prev { left: 12px; }
-.next { right: 12px; }
+.prev { left: 0px; }
+.next { right: 0px; }
 
 .carousel-btn:hover {
     background: #ffd6ea;
@@ -294,10 +317,17 @@ article{
     #sobre_mim{
         width: 100%;
     }
+
+    
 }
 
 /* CELULAR */
 @media (max-width: 480px){
+
+    body{
+        background-image: url(TELAMENORCELULAR.png);
+        background-size: 150%;
+    }
 
     header {
         flex-direction: column;
@@ -332,7 +362,7 @@ footer {
     padding: 15px;
     display: flex;
     justify-content: center;
-    background-color:  #eec8c3;
+    background-color:  #F7C6D0;
 }
 
 /* Produtos */

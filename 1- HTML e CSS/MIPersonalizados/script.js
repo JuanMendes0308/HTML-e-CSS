@@ -4,26 +4,40 @@ const btnNext = document.querySelector('.next');
 
 let index = 0;
 
-function getCardWidth() {
-    const card = track.querySelector('.cartao-produto');
-    return card.offsetWidth + 20; // largura + gap
+function getSlideWidth() {
+    const slide = track.querySelector('.cartao-produto');
+    return slide.offsetWidth;
 }
 
-btnNext.addEventListener('click', () => {
-    const cardWidth = getCardWidth();
-    const maxIndex = track.children.length - Math.floor(track.parentElement.offsetWidth / cardWidth);
+function updateSlidePosition() {
+    const slideWidth = getSlideWidth();
+    track.style.transform = `translateX(-${index * slideWidth}px)`;
+}
 
-    if (index < maxIndex) {
-        index++;
-        track.style.transform = `translateX(-${index * cardWidth}px)`;
+/* Botão NEXT */
+btnNext.addEventListener('click', () => {
+    const totalSlides = track.children.length;
+
+    index++;
+
+    // Reiniciar ao chegar no final
+    if (index >= totalSlides) {
+        index = 0; // volta para o início
     }
+
+    updateSlidePosition();
 });
 
+/* Botão PREV */
 btnPrev.addEventListener('click', () => {
-    const cardWidth = getCardWidth();
+    const totalSlides = track.children.length;
 
-    if (index > 0) {
-        index--;
-        track.style.transform = `translateX(-${index * cardWidth}px)`;
+    index--;
+
+    // voltar para o último ao voltar do início
+    if (index < 0) {
+        index = totalSlides - 1;
     }
+
+    updateSlidePosition();
 });

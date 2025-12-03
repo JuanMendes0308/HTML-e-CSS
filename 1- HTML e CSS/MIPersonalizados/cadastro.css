@@ -12,25 +12,36 @@ body{
     background-image:linear-gradient(to bottom, #c07bbf, #EFB3EE);
 
 }
-header{
+header {
     padding: 2px;
     background-color: #EFB3EE;
     margin: 0;
     border-bottom: #6d366baa inset 5px;
-    border-radius: 40px;
     background-image:linear-gradient(to bottom, #c07bbf, #EFB3EE);
-    box-shadow: 5px 5px 5px rgba(251, 0, 251, 0.486);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+nav {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    float: right;
+    gap: 20px;
+}
+
+a{
+    text-decoration: none;
 }
 #imagem_titulo{
-    display: flex;
-    position:inherit;     
+    position:inherit;    
     border: 1px none solid;
-    width: 300px;    
+    width: 250px;    
+    height: 70px;
     margin: 0;
 }
 #imagem_logo{
-    display: flex;
-    position:inherit;     
+    position:inherit;    
     border: 1px none solid;
     width: 100px;
     height: 100px;
@@ -40,6 +51,7 @@ header{
     align-items: center;
     justify-content: center;
     height: 200px;
+    width: 70%;
 }
 main{
     margin: 0 0 0 0;
@@ -104,11 +116,11 @@ input{
     margin: 0;
     width: 50%;
     padding: 10px;
-    border: 2px solid red;
+    border: #c07bbf;
     align-items: center;
     justify-content: center;
-    background-color: red;
-    color: white;
+    background-color: #CFFFE5;
+    color: rgb(0, 0, 0);
     border-radius: 60px;
     
 }

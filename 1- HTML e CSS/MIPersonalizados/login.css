@@ -33,10 +33,8 @@ nav {
     gap: 20px;
 }
 
-nav a{
+a{
     text-decoration: none;
-    color:aliceblue;
-    font-style: italic;
 }
 #imagem_titulo{
     position:inherit;    
