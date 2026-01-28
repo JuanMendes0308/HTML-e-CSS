@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    margin-bottom: 15px;
+}
+
+#header_h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: red;
+}
+
+#avaliacao_perfil{
+    font-size: 25px;
+    background-color: rgb(163, 161, 161);
+}
+
+#características{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#avaliacao{
+    display: flex;
+    justify-content: space-around;
+}
