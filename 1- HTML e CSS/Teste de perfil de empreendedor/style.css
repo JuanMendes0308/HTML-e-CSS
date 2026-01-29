@@ -15,16 +15,27 @@ header{
 }
 
 #avaliacao_perfil{
-    font-size: 25px;
-    background-color: rgb(163, 161, 161);
+    font-size: 30px;
+    background-color: rgb(214, 214, 214);
 }
 
 #características{
-    display: flex;
     justify-content: space-evenly;
 }
 
 #avaliacao{
-    display: flex;
     justify-content: space-around;
+}
+
+.pontuacao{
+    color: red;
+}
+
+#caracteristicas_pontuacao{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.titulos{
+    width: 86%;
 }
