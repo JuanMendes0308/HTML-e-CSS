@@ -1,0 +1,52 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+div{
+    border: 1px solid black;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #5A7090;
+}
+
+#corpo_pesquisa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: auto;
+    width: 40%;
+    background-color: white;
+}
+
+#img_avatar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#idade{
+    width: 70%;
+}
+
+#genero{
+    width: 80%;
+    display: flex;
+    gap: 5px;
+}
+
+#perguntas{
+    width: 90%;
+}
+
+#opiniao{
+    width: 80%;
+    display: flex;
+    gap: 5px;
+}
