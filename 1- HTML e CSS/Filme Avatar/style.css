@@ -3,10 +3,6 @@
     margin: 0;
 }
 
-div{
-    border: 1px solid black;
-}
-
 body{
     display: flex;
     align-items: center;
@@ -21,7 +17,7 @@ body{
     align-items: center;
     flex-direction: column;
     height: auto;
-    width: 40%;
+    width: 30%;
     background-color: white;
 }
 
@@ -49,4 +45,9 @@ body{
     width: 80%;
     display: flex;
     gap: 5px;
+}
+
+button{
+    background-color: rgb(161, 161, 161);
+    margin-bottom: 10px;
 }
