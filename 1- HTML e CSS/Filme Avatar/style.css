@@ -22,6 +22,9 @@ body{
 }
 
 #img_avatar{
+    width: 100%;
+    max-width: 200px;
+    height: auto; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -39,6 +42,7 @@ body{
 
 #perguntas{
     width: 90%;
+    flex-direction: row;
 }
 
 #opiniao{
@@ -50,4 +54,16 @@ body{
 button{
     background-color: rgb(161, 161, 161);
     margin-bottom: 10px;
+}
+
+@media (max-width: 480px) {
+    #corpo_pesquisa{
+        padding: 15px;
+    }
+
+    #genero,
+    #opiniao{
+        flex-direction: column;
+        gap: 5px;
+    }
 }
