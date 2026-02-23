@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+<style>
+
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f4f6f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+            width: 300px;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        select, input {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #2d6cdf;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #1b4fa8;
+        }
+
+        #resultado {
+            margin-top: 15px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>Calculadora de Juros Compostos</h2>
+
+<select id="opcao">
+    <option value="1">Calcular Juros</option>
+    <option value="2">Calcular Capital</option>
+    <option value="3">Calcular Taxa</option>
+    <option value="4">Calcular Tempo</option>
+</select>
+
+<label for="capital">Capital: </label>
+<input type="number" id="capital">
+
+<label for="juros">Juros:</label>
+<input type="number" id="juros">
+
+<label for="taxa">Taxa (%):</label>
+<input type="number" id="taxa">
+
+<label for="tempo">Tempo: </label>
+<input type="number" id="tempo">
+
+<button id="enviar">Calcular</button>
+
+<h3 id="resultado"></h3>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

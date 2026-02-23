@@ -1,69 +1,225 @@
-*{
+* {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
-body{
+body {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    min-height: 100vh;
     background-color: #5A7090;
+    padding: 20px;
 }
 
-#corpo_pesquisa{
+#corpo_pesquisa {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: auto;
-    width: 40%;
+    width: 100%;
+    max-width: 600px;
     background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
-#img_avatar{
+#img_avatar {
     width: 100%;
-    max-width: 200px;
-    height: auto; 
+    max-width: 500px;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 20px;
 }
 
-#idade{
-    width: 70%;
+#img_avatar img {
+    width: 100%;
+    height: auto;
 }
 
-#genero{
-    width: 80%;
+#idade {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+#genero {
+    width: 100%;
+    max-width: 450px;
     display: flex;
-    gap: 5px;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 15px 0;
+    justify-content: start;
 }
 
-#perguntas{
-    width: 90%;
-    flex-direction: row;
-}
-
-#opiniao{
-    width: 80%;
+#perguntas {
+    width: 100%;
+    max-width: 500px;
     display: flex;
-    gap: 5px;
+    flex-direction: column;
+    gap: 15px;
+    margin: 15px 0;
 }
 
-button{
-    background-color: rgb(161, 161, 161);
-    margin-bottom: 10px;
+#opiniao {
+    width: 100%;
+    max-width: 450px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 15px 0;
+    justify-content: start;
 }
 
-@media (max-width: 480px) {
-    #corpo_pesquisa{
-        padding: 15px;
+.radio-option {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+input[type="radio"] {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+label {
+    font-size: 1rem;
+    color: #333;
+    cursor: pointer;
+}
+
+h2, h3 {
+    text-align: center;
+    color: #333;
+    margin: 10px 0;
+}
+
+button {
+    width: 100%;
+    max-width: 300px;
+    padding: 15px;
+    background-color: #5A7090;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 20px 0 10px 0;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #4a5f7a;
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+
+@media (max-width: 768px) {
+    #corpo_pesquisa {
+        padding: 25px;
+        max-width: 90%;
+    }
+
+    #img_avatar {
+        max-width: 300px;
     }
 
     #genero,
-    #opiniao{
+    #opiniao {
+        gap: 12px;
+    }
+
+    button {
+        font-size: 1rem;
+        padding: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    #corpo_pesquisa {
+        padding: 20px 15px;
+        max-width: 100%;
+    }
+
+    #img_avatar {
+        max-width: 250px;
+        margin-bottom: 15px;
+    }
+
+    #idade {
+        font-size: 0.95rem;
+        padding: 8px;
+    }
+
+    #genero,
+    #opiniao {
         flex-direction: column;
-        gap: 5px;
+        align-items: flex-start;
+        gap: 10px;
+        padding: 0 10px;
+    }
+
+    .radio-option {
+        width: 100%;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+
+    h3 {
+        font-size: 1.1rem;
+    }
+
+    label {
+        font-size: 0.95rem;
+    }
+
+    button {
+        font-size: 0.95rem;
+        padding: 12px;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 320px) {
+    #corpo_pesquisa {
+        padding: 15px 10px;
+    }
+
+    #img_avatar {
+        max-width: 120px;
+    }
+
+    h2 {
+        font-size: 1.1rem;
+    }
+
+    h3 {
+        font-size: 1rem;
+    }
+
+    button {
+        font-size: 0.9rem;
+        padding: 10px;
     }
 }

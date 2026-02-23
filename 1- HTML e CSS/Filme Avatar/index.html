@@ -25,33 +25,34 @@
             <p>Qual seu sexo?</p>
             <div id="genero">
                 <label for="masculino">Masculino </label>
-                <input type="checkbox" name="masculino" id="masculino">
+                <input type="checkbox" class="input_genero" name="masculino" id="masculino">
                 <br>
                 <label for="feminino">Feminino </label>
-                <input type="checkbox" name="feminino" id="feminino">
+                <input type="checkbox" class="input_genero" name="feminino" id="feminino">
             </div>
             <br>
             <p>O que você achou do filme?</p>
             <div id="opiniao">
                 <label for="excelente">Excelente </label>
-                <input type="checkbox" name="excelente" id="excelente">
+                <input type="checkbox" class="input_opiniao" name="excelente" id="excelente">
                 <br>
                 <label for="bom">Bom </label>
-                <input type="checkbox" name="bom" id="bom">
+                <input type="checkbox" class="input_opiniao" name="bom" id="bom">
                 <br>
                 <label for="regular">Regular </label>
-                <input type="checkbox" name="regular" id="regular">
+                <input type="checkbox" class="input_opiniao" name="regular" id="regular">
                 <br>
                 <label for="pessimo">Péssimo </label>
-                <input type="checkbox" name="pessimo" id="pessimo"> 
+                <input type="checkbox" class="input_opiniao" name="pessimo" id="pessimo"> 
             </div>
             <br>
             <br>
-            <button type="submit" onclick="clicar()">Finalizar Pesquisa</button>
+            <button type="submit" onclick="clicar()" >Finalizar Pesquisa</button>
             <br>
             <div id="resposta"></div>
         </div>
     </div>
+    <script src="informacao.js"></script>
 </body>
 
 </html>
