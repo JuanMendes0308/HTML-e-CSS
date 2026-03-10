@@ -1,148 +1,154 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Produtos de festa</title>
     <link rel="stylesheet" href="style.css">
+    <title>Produtos de Eventos - MI Personalizados</title>
 </head>
-<body class="corpo">
 
+<body>
+    <!-- HEADER -->
     <header>
-        <div id="conjunto">
-        <img src="img/LogoMIpersonalizados-removebg-preview.png" alt="" id="imagem_titulo">
-        <img src="img/logotitulo.png" id="imagem_logo" >
-    </div>
-        <nav>
+        <div class="header-container">
+            <div class="logo-section">
+                <img src="img/LogoMIpersonalizados-removebg-preview.png" alt="Logo" id="imagem_titulo">
+                <img src="img/logotitulo.png" alt="MI Personalizados" id="imagem_logo">
+            </div>
+
+            <button class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav id="navMenu">
                 <a href="index.html">Home</a>
-                <a href="produtos.html">Produtos</a>
-                <a href="festa.html">Produtos de Festa</a>
-                <a href="presente.html">Produtos de Presente</a>
+                <a href="festa.html">Eventos</a>
+                <a href="sobre.html">Sobre</a>
                 <a href="login.html">Login</a>
-        </nav>
+                <a href="cadastro.html">Cadastro</a>
+            </nav>
+        </div>
     </header>
 
-    <main class="corpodoproduto">
-        <article class="itens">
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div>
+            <h2>Produtos para Eventos</h2>
+            <p>Lembrancinhas e decorações perfeitas para suas celebrações</p>
+        </div>
+    </section>
 
-            <figure class="bloco">
-
-                 <div class="fundo">
-                    <img src="img/festa/festa1.jpg" alt="Festa na bandeija" class="produtos">
-
-                    <p class="descricao">Festa na Bandeija</p>
-
-                    <button class="butao" id="botao" onclick="clicar()">Mais informações</button>
-
-                 </div>
-
-                <div class="fundo">
-                    <img src="img/festa/festa2.jpg" alt="Festa pronta" class="produtos">
-
-                    <p class="descricao">Festa Pronta</p>
-
-                    <button class="butao" id="botao" onclick="clicar()">Mais informações</button>
+    <!-- PRODUTOS EVENTOS -->
+    <main class="products-page">
+        <h2 class="section-title">Nossas Coleções de Eventos</h2>
+        
+        <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 2rem; padding: 2rem;">
+            <div class="product-card">
+                <div class="product-image" style="background: linear-gradient(135deg, #B3FFB3 0%, #B3FFE6 100%);">
+                    <span style="font-size: 3rem;">🎂</span>
                 </div>
-
-                <div class="fundo">
-                    <img src="img/festa/topo_de_bolo1.jpg" alt="Topo de bolo de unicórnio" class="produtos">
-
-                    <p class="descricao">Topo de bolo de unicórnio </p>
-
-                    <button class="butao" id="botao" onclick="clicar()"> Mais informações</button>
+                <div class="product-info">
+                    <span class="product-category">Aniversário</span>
+                    <h3 class="product-name">Topo de Bolo Personalizado</h3>
+                    <p class="product-price">R$ 29.90</p>
+                    <button class="product-btn">Adicionar ao Carrinho</button>
                 </div>
+            </div>
 
-                <div class="fundo">
-                    <img src="img/festa/topo_de_bolo2.jpg" alt="Topo de bolo de idade" class="produtos">
-
-                    <p class="descricao">Topo de bolo de idade</p>
-
-                    <button class="butao" id="botao" onclick="clicar()"> Mais informações</button>
+            <div class="product-card">
+                <div class="product-image" style="background: linear-gradient(135deg, #FFD9B3 0%, #FFB3D9 100%);">
+                    <span style="font-size: 3rem;">🎉</span>
                 </div>
-
-                <div class="fundo">
-                    <img src="img/festa/topo_de_bolo3.jpg" alt="Topo de bolo de Minha Mãe é uma peça" class="produtos">
-
-                    <p class="descricao">Topo de bolo Minha Mãe é uma peça</p>
-
-                    <button class="butao" id="botao" onclick="clicar()">Mais informações</button>
+                <div class="product-info">
+                    <span class="product-category">Festa</span>
+                    <h3 class="product-name">Kit Festa Completo</h3>
+                    <p class="product-price">R$ 199.90</p>
+                    <button class="product-btn">Adicionar ao Carrinho</button>
                 </div>
+            </div>
 
-                <div class="fundo">
-                    <img src="img/festa/topo_de_bolo4.jpg" alt="Topo de bolo de fundo do mar" class="produtos">
-
-                    <p class="descricao">Topo de bolo de fundo do mar</p> 
-
-                    <button class="butao" id="botao" onclick="clicar()">Mais informações</button>
+            <div class="product-card">
+                <div class="product-image" style="background: linear-gradient(135deg, #E6B3FF 0%, #B3D9FF 100%);">
+                    <span style="font-size: 3rem;">💒</span>
                 </div>
-
-                <div class="fundo">
-                    <img src="img/festa/topo_de_bolo5.jpg" alt="Topo de bolo da Princesa Bela" class="produtos">
-
-                    <p class="descricao">Topo de bolo da Princesa Bela</p>
-
-                    <button class="butao" id="botao">Mais informações</button>
+                <div class="product-info">
+                    <span class="product-category">Casamento</span>
+                    <h3 class="product-name">Lembrança de Casamento</h3>
+                    <p class="product-price">R$ 89.90</p>
+                    <button class="product-btn">Adicionar ao Carrinho</button>
                 </div>
+            </div>
 
-                <div class="fundo">
-                    <img src="img/festa/topo_de_bolo6.jpg" alt="Topo de bolo do Stitch" class="produtos">
-
-                    <p class="descricao">Topo de bolo do Stitch</p>
-
-                    <button class="butao" id="botao" onclick="clicar()">Mais informações</button>
-
+            <div class="product-card">
+                <div class="product-image" style="background: linear-gradient(135deg, #B3FFB3 0%, #FFFFB3 100%);">
+                    <span style="font-size: 3rem;">👶</span>
                 </div>
-
-                <div class="fundo">
-                    <img src="img/festa/topo_de_bolo7.jpg" alt="Topo de bolo de aposta" class="produtos">
-
-                    <p class="descricao">Topo de bolo de aposta</p>
-
-                    <button class="butao" id="botao" onclick="clicar()">Mais informações</button>
-
+                <div class="product-info">
+                    <span class="product-category">Maternidade</span>
+                    <h3 class="product-name">Kit Chá de Fraldas</h3>
+                    <p class="product-price">R$ 159.90</p>
+                    <button class="product-btn">Adicionar ao Carrinho</button>
                 </div>
+            </div>
 
-                <div class="fundo">
-                    <img src="img/festa/topo_de_bolo8.jpg" alt="Topo de bolo de calendário" class="produtos">
-
-                    <p class="descricao">Topo de bolo de calendário</p>
-
-                    <button class="butao" id="botao" onclick="clicar()">Mais informações</button>
-
+            <div class="product-card">
+                <div class="product-image" style="background: linear-gradient(135deg, #FFB3D9 0%, #B3D9FF 100%);">
+                    <span style="font-size: 3rem;">🎓</span>
                 </div>
-
-                <div class="fundo">
-                    <img src="img/festa/topo_de_bolo9.jpg" alt="Topo de bolo do Stitch" class="produtos">
-
-                    <p class="descricao">Topo de bolo do Stitch</p>
-
-                    <button class="butao" id="botao" onclick="clicar()">Mais informações</button>
-
+                <div class="product-info">
+                    <span class="product-category">Formatura</span>
+                    <h3 class="product-name">Lembranças de Formatura</h3>
+                    <p class="product-price">R$ 49.90</p>
+                    <button class="product-btn">Adicionar ao Carrinho</button>
                 </div>
+            </div>
 
-                <div class="fundo">
-                    <img src="img/festa/topo_de_bolo10.jpg" alt="Topo de bolo de miraculous" class="produtos">
-
-                    <p class="descricao">Topo de bolo de miraculous</p>
-
-                    <button class="butao" id="botao" onclick="clicar()">Mais informações</button>
-
+            <div class="product-card">
+                <div class="product-image" style="background: linear-gradient(135deg, #FFD9B3 0%, #B3FFE6 100%);">
+                    <span style="font-size: 3rem;">🎁</span>
                 </div>
-
-                <div class="fundo">
-                    <img src="img/festa/topo_de_bolo11.jpg" alt="Topo de bolo de flores"  class="produtos">
-
-                    <p class="descricao">Topo de bolo de flores</p>
-
-                    <button class="butao" id="botao" onclick="clicar()">Mais informações</button>
+                <div class="product-info">
+                    <span class="product-category">Lembrança</span>
+                    <h3 class="product-name">Caixa Decorativa</h3>
+                    <p class="product-price">R$ 34.90</p>
+                    <button class="product-btn">Adicionar ao Carrinho</button>
                 </div>
+            </div>
+        </div>
+    </main>
 
-                <div class="fundo">
-                    <img src="img/festa/topo_de_bolo12.jpg" alt="Topo de bolo fundo do mar" class="produtos">
-            
-                    <p class="descricao">Topo de bolo fundo do mar</p>
-                    
-                    <button class="butao" id="botao" onclick="clica()">Mais informações</button>
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>MI Personalizados</h4>
+                <p>Presentes e lembranças exclusivas feitos com carinho.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Contato</h4>
+                <p>📞 (13) 99999-9999</p>
+                <p>📧 contato@mipersonalizados.com</p>
+            </div>
+            <div class="footer-section">
+                <h4>Redes Sociais</h4>
+                <p>
+                    <a href="https://www.instagram.com/mipersonalizados2022/">Instagram</a> | 
+                    <a href="https://wa.me/551300000000">WhatsApp</a>
+                </p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 MI Personalizados. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
 
                 </div>
 

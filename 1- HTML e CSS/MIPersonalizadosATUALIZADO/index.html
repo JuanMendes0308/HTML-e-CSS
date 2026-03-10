@@ -5,234 +5,193 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>MI Personalizados - Loja de Presentes Exclusivos</title>
 </head>
 
 <body>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo-section">
+                <img src="img/LogoMIpersonalizados-removebg-preview.png" alt="Logo MI Personalizados" class="logo">
+                <h1 class="brand-name">MI Personalizados</h1>
+            </div>
 
-    <header>
-        <div id="conjunto">
-            <img src="img/LogoMIpersonalizados-removebg-preview.png" alt="" id="imagem_titulo">
-            <img src="img/logotitulo.png" id="imagem_logo">
+            <button class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="nav" id="navMenu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#produtos" class="nav-link">Produtos</a>
+                <a href="#sobre" class="nav-link">Sobre</a>
+                <a href="#contato" class="nav-link">Contato</a>
+                <button class="auth-btn login-btn" id="loginBtn">🔑 Login</button>
+                <button class="auth-btn signup-btn" id="signupBtn">✏️ Cadastro</button>
+                <button class="cart-btn" id="cartBtn">🛒 <span id="cartCount">0</span></button>
+            </nav>
         </div>
-
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="produtos.html">Produtos</a>
-            <a href="festa.html">Produtos de Festa</a>
-            <a href="presente.html">Produtos de Presente</a>
-            <a href="login.html">Login</a>
-        </nav>
-
     </header>
 
-
-
-    <main>
-
-        <div id="sobre">
-            <article>
-                <h2>Nosso Objetivo</h2> <br>
-                <p>A Mi Personalizados tem como objetivo principal ser a referência de mercado em presentes e lembranças
-                    que convergem exclusividade, qualidade superior e valor afetivo. A empresa se estabelece como o
-                    parceiro de confiança para clientes que valorizam produtos únicos e fora do padrão, como as mães
-                    festeiras, dedicando-se a garantir a mais alta qualidade e entregando itens que superam
-                    expectativas, feitos com carinho e atenção rigorosa aos detalhes. Nosso compromisso é transformar
-                    cada evento em uma lembrança eterna, consolidando a marca como sinônimo de afeto e momentos
-                    inesquecíveis. Na Mi Personalizados, transformamos ideias em celebrações memoráveis, atuando como um
-                    ateliê especializado na criação de produtos exclusivos e emocionantes que narram a história de cada
-                    cliente de forma singular. Nosso portfólio de serviços concentra-se em Lembrancinhas Personalizadas,
-                    que são a alma da festa; Encadernação, com álbuns e planners feitos artesanalmente; Sublimação e
-                    Transfer, para peças únicas de presente ou decoração; e Kits Mini Festa, que oferecem praticidade
-                    com um toque exclusivo da nossa marca.</p>
-            </article>
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h2>Personalize seus Momentos</h2>
+            <p>Crie lembranças únicas com produtos exclusivos feitos com carinho</p>
+            <button class="cta-btn" onclick="document.getElementById('produtos').scrollIntoView({behavior: 'smooth'})">Explorar Produtos</button>
         </div>
-        <div id="sobre_mim">
-            <img src="img/Mídia copiar.png" alt="Uma mulher chamada Michele" id="imagem_tia">
+    </section>
 
-
-            <center>
-                <figcaption>
-                    <font size="6px">Michele Costa</font>
-                </figcaption>
-            </center>
-            <center>Fundadora</center>
-            <br>
-            <p>Sou Michele, fundadora da Mi Personalizados. <br> Minha paixão pela papelaria começou em 2016, ao
-                criar os personalizados do aniversário da minha filha. Desde então, transformo papel em arte com
-                carinho e propósito. Em 2024, passei a me dedicar 100% à marca para oferecer peças únicas, feitas
-                com cuidado em cada detalhe.</p>
+    <!-- CATEGORIAS PRINCIPAIS -->
+    <section class="categories">
+        <h2 class="section-title">Nossas Categorias</h2>
+        <div class="categories-grid">
+            <div class="category-card">
+                <div class="category-icon">🎂</div>
+                <h3>Festa</h3>
+                <p>Lembrancinhas e decoração para suas celebrações</p>
+            </div>
+            <div class="category-card">
+                <div class="category-icon">🎁</div>
+                <h3>Presentes</h3>
+                <p>Presentes únicos e personalizados</p>
+            </div>
+            <div class="category-card">
+                <div class="category-icon">👶</div>
+                <h3>Maternidade</h3>
+                <p>Kits especiais para mães festeiras</p>
+            </div>
         </div>
+    </section>
 
-
-    </main>
-
-
-    <h1>Mais Vendidos</h1>
-    <div class="carousel">
-
-
-        <button class="carousel-btn prev">❮</button>
-        <button class="carousel-btn next">❯</button>
-
-        <div class="carousel-track">
-
-            <div class="cartao-produto">
-                <div class="imagem">
-                    <img src="img/agenda1.jpg" id="img">
-                    <div class="overlay">
-                        Agenda Colorida
-                    </div>
-                </div>
-            </div>
-
-            <div class="cartao-produto">
-                <div class="imagem">
-                    <img src="img/garrafinha1.jpg">
-
-                    <div class="overlay">
-                        Garrafas
-                    </div>
-                </div>
-            </div>
-
-            <div class="cartao-produto">
-                <div class="imagem">
-                    <img src="img/chaveiro2.jpg">
-
-                    <div class="overlay">
-                        Chaveiro
-                    </div>
-                </div>
-            </div>
-
-            <div class="cartao-produto">
-                <div class="imagem">
-                    <img src="img/canecas1.jpg">
-
-                    <div class="overlay">
-                        Caneca
-                    </div>
-                </div>
-            </div>
-
-            <div class="cartao-produto">
-                <div class="imagem">
-                    <img src="img/kitmaternidade1.jpg">
-
-                    <div class="overlay">
-                        Kit Maternidade
-                    </div>
-                </div>
-            </div>
-
-            <div class="cartao-produto">
-                <div class="imagem">
-                    <img src="img/topobolo1.jpg">
-
-                    <div class="overlay">
-                        Topo de Bolo
-                    </div>
-                </div>
-            </div>
-
+    <!-- PRODUTOS EM DESTAQUE -->
+    <section class="featured-products" id="produtos">
+        <h2 class="section-title">Mais Vendidos</h2>
+        <div class="product-grid" id="productGrid">
+            <!-- Os produtos serão inseridos aqui via JavaScript -->
         </div>
-    </div>
-    <br>
-    
+    </section>
 
-
-    <h1 id="tituo_port">Portifólio</h1>
-    <div class="carousel" id="portifolio">
-        <div class="carousel-track">
-
-            <div class="cartao-produto">
-                <div class="imagem">
-                    <img src="img/agenda1.jpg">
-                    <div class="overlay">
-                        Agenda Colorida
-                    </div>
+    <!-- SOBRE -->
+    <section class="about" id="sobre">
+        <div class="about-container">
+            <div class="about-text">
+                <h2>Sobre a MI Personalizados</h2>
+                <p>Transformamos ideias em celebrações memoráveis. Somos um ateliê especializado na criação de produtos exclusivos e emocionantes que narram a história de cada cliente de forma singular.</p>
+                <p>Com mais de 8 anos de experiência, consolidamos a marca como sinônimo de afeto e momentos inesquecíveis.</p>
+            </div>
+            <div class="founder-info">
+                <div class="founder-card">
+                    <img src="img/Mídia copiar.png" alt="Michele Costa - Fundadora" class="founder-image">
+                    <h3>Michele Costa</h3>
+                    <p class="position">Fundadora & Criadora</p>
+                    <p>Minha paixão pela papelaria começou em 2016, ao criar os personalizados do aniversário da minha filha. Em 2024, passei a dedicar 100% à marca para oferecer peças únicas.</p>
                 </div>
             </div>
+        </div>
+    </section>
 
-            <div class="cartao-produto">
-                <div class="imagem">
-                    <img src="img/agenda2.jpg">
-
-                    <div class="overlay">
-                        Agenda
-                    </div>
-                </div>
+    <!-- MODAL DO CARRINHO -->
+    <div class="modal" id="cartModal">
+        <div class="modal-content">
+            <button class="close-btn" onclick="closeCart()">&times;</button>
+            <h2>Seu Carrinho</h2>
+            <div id="cartItems"></div>
+            <div class="cart-total">
+                <p>Total: R$ <span id="cartTotal">0.00</span></p>
+                <button class="checkout-btn">Ir para Checkout</button>
             </div>
-
-            <div class="cartao-produto">
-                <div class="imagem">
-                    <img src="img/chaveiro2.jpg">
-
-                    <div class="overlay">
-                        Chaveiro
-                    </div>
-                </div>
-            </div>
-
-            <div class="cartao-produto">
-                <div class="imagem">
-                    <img src="img/chaveiro1.jpg">
-
-                    <div class="overlay">
-                        Chaveiro
-                    </div>
-                </div>
-            </div>
-
-            <div class="cartao-produto">
-                <div class="imagem">
-                    <img src="img/canecas1.jpg">
-
-                    <div class="overlay">
-                        Caneca
-                    </div>
-                </div>
-            </div>
-
-            <div class="cartao-produto">
-                <div class="imagem">
-                    <img src="festa/topo_de_bolo7.jpg">
-
-                    <div class="overlay">
-                        Topo de Bolo
-                    </div>
-                </div>
-            </div>
-
         </div>
     </div>
 
-<div class="contato">
-        <button class="zap">
+    <!-- MODAL DE LOGIN -->
+    <div class="modal" id="loginModal">
+        <div class="modal-content auth-modal">
+            <button class="close-btn" onclick="closeLogin()">&times;</button>
+            <h2>Fazer Login</h2>
+            <form class="auth-form" onsubmit="handleLogin(event)">
+                <div class="form-group">
+                    <label for="loginEmail">Email</label>
+                    <input type="email" id="loginEmail" placeholder="seu@email.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="loginPassword">Senha</label>
+                    <input type="password" id="loginPassword" placeholder="Sua senha" required>
+                </div>
+                <button type="submit" class="submit-btn">Entrar</button>
+            </form>
+            <p class="auth-switch">Não tem conta? <a href="#" onclick="switchToSignup()">Cadastre-se aqui</a></p>
+        </div>
+    </div>
 
-            <a href="https://l.instagram.com/?u=https%3A%2F%2Fwa.me%2Fmessage%2FZDNNFKYWAXFCJ1%3Futm_source%3Dig%26utm_medium%3Dsocial%26utm_content%3Dlink_in_bio%26fbclid%3DPAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnpBQQhRvBfS5dmYf4L9aU28diGfKwy37JeBQqN7qLmbdoBNtZyC5sNrmETIo_aem_1sA4E82PwYlPreX5XSTODQ&e=AT1ZhfRaw7RK-f-PdwQkV-0tJpPaCT7F_LdJr9s0gUH-wi-ltLY4D1FxZ5QJSlvt39t0PS4lQb98HTb1g5c5J6pYyVWYhkF_Chjy1PlZKQ%22" target="
-                _blank">
+    <!-- MODAL DE CADASTRO -->
+    <div class="modal" id="signupModal">
+        <div class="modal-content auth-modal">
+            <button class="close-btn" onclick="closeSignup()">&times;</button>
+            <h2>Criar Conta</h2>
+            <form class="auth-form" onsubmit="handleSignup(event)">
+                <div class="form-group">
+                    <label for="signupName">Nome Completo</label>
+                    <input type="text" id="signupName" placeholder="Seu nome" required>
+                </div>
+                <div class="form-group">
+                    <label for="signupEmail">Email</label>
+                    <input type="email" id="signupEmail" placeholder="seu@email.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="signupPassword">Senha</label>
+                    <input type="password" id="signupPassword" placeholder="Crie uma senha" required>
+                </div>
+                <div class="form-group">
+                    <label for="signupConfirmPassword">Confirmar Senha</label>
+                    <input type="password" id="signupConfirmPassword" placeholder="Confirme a senha" required>
+                </div>
+                <button type="submit" class="submit-btn">Cadastrar</button>
+            </form>
+            <p class="auth-switch">Já tem conta? <a href="#" onclick="switchToLogin()">Faça login aqui</a></p>
+        </div>
+    </div>
 
-                <img src="img/zap.jpg" alt="simbolo do Whatzapp" height="50px">
-
+    <!-- CONTATO E SOCIAL -->
+    <section class="contact" id="contato">
+        <h2 class="section-title">Entre em Contato</h2>
+        <div class="contact-container">
+            <a href="https://wa.me/551300000000" target="_blank" class="social-btn whatsapp">
+                <span>💬</span> WhatsApp
             </a>
-        </button>
-        <button class="zap">
-
-            <a href="https://www.instagram.com/mipersonalizados2022/" target="_blank">
-
-                <img src="img/insta.png" alt="simbolo do Whatzapp" height="50px">
-
-
+            <a href="https://instagram.com/mipersonalizados2022" target="_blank" class="social-btn instagram">
+                <span>📸</span> Instagram
             </a>
-        </button>
-    </div>
+            <a href="mailto:contato@mipersonalizados.com" class="social-btn email">
+                <span>✉️</span> E-mail
+            </a>
+        </div>
+    </section>
 
-    <footer>
-        MiPersonalizados &copy Direitos Reservado <br>
-        <p>(13) 0000-0000 <br> email@exemplo.com <br>
-            ENDEREÇO</p>
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>MI Personalizados</h4>
+                <p>Presentes e lembranças exclusivas feitos com carinho.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Contato</h4>
+                <p>📞 (13) 99999-9999</p>
+                <p>📧 contato@mipersonalizados.com</p>
+            </div>
+            <div class="footer-section">
+                <h4>Redes Sociais</h4>
+                <p>
+                    <a href="#">Instagram</a> | 
+                    <a href="#">WhatsApp</a>
+                </p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 MI Personalizados. Todos os direitos reservados.</p>
+        </div>
 
     </footer>
 

@@ -1,50 +1,100 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="login.css">
-    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Login - MI Personalizados</title>
 </head>
 
 <body>
+    <!-- HEADER -->
     <header>
-        <div id="conjunto">
-            <img src="img/LogoMIpersonalizados-removebg-preview.png" alt="" id="imagem_logo">
-            <img src="img/logotitulo.png" id="imagem_titulo">
-        </div>
-        <nav>
+        <div class="header-container">
+            <div class="logo-section">
+                <img src="img/LogoMIpersonalizados-removebg-preview.png" alt="Logo" id="imagem_titulo">
+                <img src="img/logotitulo.png" alt="MI Personalizados" id="imagem_logo">
+            </div>
+
+            <button class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav id="navMenu">
                 <a href="index.html">Home</a>
-                <a href="produtos.html">Produtos</a>
-                <a href="festa.html">Produtos de Festa</a>
-                <a href="presente.html">Produtos de Presente</a>
+                <a href="festa.html">Eventos</a>
+                <a href="sobre.html">Sobre</a>
                 <a href="login.html">Login</a>
-        </nav>
+                <a href="cadastro.html">Cadastro</a>
+            </nav>
+        </div>
     </header>
 
-        <main>
-            <div id="bloco_login">
-                <h1><center>Faça Seu Login</center></h1>
-                <div id="info_email">
-                    <h3>Email cadastrado</h3>
-                    <input type="email" name="" class="info" placeholder="Digite o seu Email">
-                </div>
-                    <br>
-                <div id="info_senha">
-                    <h3>Senha cadastrada</h3>
-                    <input type="password" name="" class="info" placeholder="Digite a sua senha"> 
+    <!-- MAIN CONTENT -->
+    <main style="display: flex; align-items: center; justify-content: center; min-height: calc(100vh - 200px); padding: 3rem 2rem;">
+        <div class="auth-container">
+            <h2>Entrar na Sua Conta</h2>
+
+            <form onsubmit="handleLogin(event)">
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required placeholder="seu.email@exemplo.com">
                 </div>
 
-                <div id="divBotao">
-                    <input type="button" value="Logar" id="button_login">
+                <div class="form-group">
+                    <label for="password">Senha:</label>
+                    <input type="password" id="password" name="password" required placeholder="Sua senha segura">
                 </div>
-                    <br>
-                    <center><p>Caso não tenha conta, <a href="cadastro.html">Cadastre-se</a></p>
-                    </center>
-                
+
+                <button type="submit" class="form-btn">Entrar</button>
+            </form>
+
+            <div class="form-link">
+                Não tem uma conta? <a href="cadastro.html">Cadastre-se aqui</a>
             </div>
-        </main>
+
+            <div class="form-link" style="margin-top: 1.5rem; font-size: 0.9rem;">
+                <a href="#" style="color: #999;">Esqueceu sua senha?</a>
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>MI Personalizados</h4>
+                <p>Presentes e lembranças exclusivas feitos com carinho.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Contato</h4>
+                <p>📞 (13) 99999-9999</p>
+                <p>📧 contato@mipersonalizados.com</p>
+            </div>
+            <div class="footer-section">
+                <h4>Redes Sociais</h4>
+                <p>
+                    <a href="https://www.instagram.com/mipersonalizados2022/">Instagram</a> | 
+                    <a href="https://wa.me/551300000000">WhatsApp</a>
+                </p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 MI Personalizados. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        function handleLogin(event) {
+            event.preventDefault();
+            const email = document.getElementById("email").value;
+            alert(`Bem-vindo! Enviamos um link de confirmação para ${email}`);
+        }
+    </script>
+    <script src="script.js"></script>
 </body>
 
 </html>
