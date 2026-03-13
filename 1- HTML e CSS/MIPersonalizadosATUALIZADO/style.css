@@ -730,6 +730,99 @@ body {
     font-size: 0.9rem;
 }
 
+/* ================= Pagina de Produtos ================= */
+
+.contPrincipal {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 100px;
+}
+
+.imagens {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 15px;
+}
+.imagemDeDestaque {
+    width: 150px;
+    height: 150px;
+    border-radius: 30%;
+    object-fit: cover;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+    cursor: pointer;
+}
+
+.imagemPrincipal {
+    width: 600px;
+    height: 600px;
+}
+
+.informacoes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.subTitulo {
+    font-size: 30px;
+    font-weight: bold;
+    color: #4A4A4A;
+    margin-bottom: 10px;
+}
+
+.valor1 {
+    font-size: 20px;
+}
+
+.valor {
+    font-size: 30px;
+    color: #76f776;
+}
+
+label {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+input[type="number"] {
+    width: 60px;
+    padding: 5px;
+    font-size: 16px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.adicionar {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #76f776;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.descricao {
+    margin-top: 40px;
+    max-width: 800px;
+    text-align: left;
+    color: #4A4A4A;
+    gap: 20px;
+}
+
+
 /* ================= RESPONSIVIDADE ================= */
 
 /* TABLETS */
