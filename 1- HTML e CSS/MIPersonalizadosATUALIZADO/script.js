@@ -467,7 +467,7 @@ function updateAuthButtonsUI() {
         document.getElementById("logoutBtn")?.remove();
         
         // Mostrar botões de login e cadastro
-        loginBtn.innerHTML = `🔑 Login`;
+        loginBtn.innerHTML = ` Login`;
         loginBtn.style.pointerEvents = "auto";
         loginBtn.style.opacity = "1";
         loginBtn.style.cursor = "pointer";
