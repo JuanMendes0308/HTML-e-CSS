@@ -5,7 +5,9 @@ const products = [
         name: "Agenda Colorida",
         category: "Papelaria",
         price: 45.90,
-        icon: "📔",
+        icon: {
+            innerHTML: "<img src='papelaria/cardeno2.jpg' alt='Agenda Icon' style='width: 200px; height: 225px;'>"
+        },
         description: "Agenda personalizada com cores pasteis"
     },
     {
@@ -13,7 +15,9 @@ const products = [
         name: "Garrafinha Térmica",
         category: "Utensílios",
         price: 89.90,
-        icon: "🍶",
+        icon: {
+            innerHTML: "<img src='ultilidade/ultilidade8.jpg' alt='Garrafinha Icon' style='width: 200px; height: 225px;'>"
+        },
         description: "Garrafa personalizada para manter bebida quentinha"
     },
     {
@@ -21,7 +25,9 @@ const products = [
         name: "Chaveiro Acrílico",
         category: "Acessórios",
         price: 24.90,
-        icon: "🔑",
+        icon: {
+            innerHTML: "<img src='img/chaveiro1.jpg' alt='Chaveiro Icon' style='width: 200px; height: 225px;'>"
+        },
         description: "Chaveiro personalizado em acrílico"
     },
     {
@@ -29,7 +35,9 @@ const products = [
         name: "Caneca Especial",
         category: "Utensílios",
         price: 34.90,
-        icon: "☕",
+        icon: {
+            innerHTML: "<img src='img/canecas3.jpg' alt='Caneca Icon' style='width: 200px; height: 225px;'>"
+        },
         description: "Caneca personalizada para presentes"
     },
     {
@@ -37,7 +45,9 @@ const products = [
         name: "Kit Maternidade",
         category: "Festa",
         price: 159.90,
-        icon: "👶",
+        icon: {
+            innerHTML: "<img src='img/kitmaternidade1.jpg' alt='Kit Maternidade Icon' style='width: 200px; height: 225px;'>"
+        },
         description: "Kit completo para chá de fraldas"
     },
     {
@@ -45,32 +55,40 @@ const products = [
         name: "Topo de Bolo",
         category: "Festa",
         price: 29.90,
-        icon: "🎂",
+        icon: {
+            innerHTML: "<img src='img/topobolo4.jpg' alt='Topo de Bolo Icon' style='width: 200px; height: 225px;'>"
+        },
         description: "Topo de bolo personalizado para sua festa"
     },
     {
         id: 7,
-        name: "Almofada Personalizada",
+        name: "Decoração de Mesa",
         category: "Decoração",
         price: 69.90,
-        icon: "🛋️",
-        description: "Almofada com estampa personalizada"
+        icon: {
+            innerHTML: "<img src='img/decoracaomesa2.jpg' alt='Decoração de Mesa Icon' style='width: 200px; height: 225px;'>"
+        },
+        description: "Decoração de mesa personalizada"
     },
     {
         id: 8,
-        name: "Planner Anual",
+        name: "Tabuada Personalizada",
         category: "Papelaria",
         price: 99.90,
-        icon: "📅",
-        description: "Planner artesanal com design exclusivo"
+        icon: {
+            innerHTML: "<img src='img/papelaria/tabuada.jpg' alt='Planner Icon' style='width: 200px; height: 225px;'>"
+        },
+        description: "Tabuada personalizada para facilitar o aprendizado"
     },
     {
         id: 9,
-        name: "Kits de Festa Completo",
+        name: "Kits Lembrancinhas",
         category: "Festa",
         price: 249.90,
-        icon: "🎉",
-        description: "Kit de festa com lembrança, decoração e convite"
+        icon: {
+            innerHTML: "<img src='img/festa/kit_lembrancinha9.jpg' alt='Kits de Lembrancinhas Icon' style='width: 200px; height: 225px;'>"
+        },
+        description: "Kit de lembrancinhas personalizadas para sua festa"
     }
 ];
 
@@ -97,10 +115,11 @@ document.querySelectorAll(".nav-link").forEach(link => {
 function renderProducts() {
     const productGrid = document.getElementById("productGrid");
     
-    productGrid.innerHTML = products.map(product => `
+    productGrid.innerHTML = products.map(product =>
+        `
         <div class="product-card">
             <div class="product-image">
-                ${product.icon}
+                ${product.icon.innerHTML}
             </div>
             <div class="product-info">
                 <span class="product-category">${product.category}</span>
@@ -448,7 +467,7 @@ function updateAuthButtonsUI() {
         const logoutBtn = document.createElement("button");
         logoutBtn.id = "logoutBtn";
         logoutBtn.className = "auth-btn logout-btn";
-        logoutBtn.innerHTML = `🚪 Sair`;
+        logoutBtn.innerHTML = ` Sair`;
         logoutBtn.addEventListener("click", logout);
         
         // Modificar botão de login
@@ -467,7 +486,7 @@ function updateAuthButtonsUI() {
         document.getElementById("logoutBtn")?.remove();
         
         // Mostrar botões de login e cadastro
-        loginBtn.innerHTML = ` Login`;
+        loginBtn.innerHTML = `Login`;
         loginBtn.style.pointerEvents = "auto";
         loginBtn.style.opacity = "1";
         loginBtn.style.cursor = "pointer";
